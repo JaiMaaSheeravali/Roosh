@@ -1,5 +1,11 @@
 #include <iostream>
 #include <unistd.h>
+#include <string.h>
+#include <sstream>
+#include <fstream>
+
+#include "../include/parse.hpp"
+#include "../include/launch.hpp"
 
 using namespace std;
 int roosh_cd(char **args)
@@ -21,9 +27,65 @@ int roosh_cd(char **args)
     return 1;
 }
 
+// this will take a stream and run all 
+// commands in that stream in batch mode
+void roosh_batch_loop(std::istream &in)
+{
+    string line;
+
+    // keep taking the input till EOF or exit
+    while (getline(in, line))
+    {
+        
+        // empty command i.e 'enter key'
+        if (line.empty() || line[0] == '#')
+        {
+            continue;
+        }
+
+        // exit through batch mode isn't allowed
+        auto [args, n] = roosh_parse(line);
+        roosh_launch(args, n);
+
+        // deallocating memory
+        for (int i = 0; i < n; i++)
+        {
+            delete[] args[i];
+        }
+        delete[] args;
+
+    }
+}
+
+int roosh_rsh(char **args){
+
+    // Produce error if no file is specified.
+    if (args[1] == NULL)
+    {
+        cerr << "Batch Mode: No file specified to run in Batch Mode\n";
+        return 1;
+    }
+
+    // Check if extension of file is correct or not
+    int slen = strlen(args[1]);
+    char buf[5];
+    strncpy(buf, args[1]+slen-4, 4);
+
+    if(strcmp(buf, ".rsh") == 0){
+        
+        // Make a file stream from file and call roosh batch loop
+        std::ifstream infile(args[1]);
+        
+        roosh_batch_loop(infile);
+    } else {
+        cerr << "Invalid File Format! Not a Batch File.\n";
+    }
+    return 1;
+}
+
 int roosh_history(char **args)
 {
-    
+    return 1;
 }
 int roosh_exit(char **args)
 {

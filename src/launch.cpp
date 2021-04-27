@@ -9,12 +9,14 @@ using namespace std;
 const char *builtin_list[] = {
     "cd",
     "history",
-    "exit"};
+    "exit",
+    "rsh"};
 
 int (*builtin_func[])(char **) = {
     &roosh_cd,
     &roosh_history,
-    &roosh_exit};
+    &roosh_exit,
+    &roosh_rsh};
 
 bool roosh_exec(char **args)
 {
