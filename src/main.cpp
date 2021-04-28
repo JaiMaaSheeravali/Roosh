@@ -5,18 +5,22 @@
 
 #include "../include/parse.hpp"
 #include "../include/launch.hpp"
+#include "../include/input.hpp"
 using namespace std;
 
 void roosh_loop(std::istream &in)
 {
     string line;
+    print_input_format();
 
     // keep taking the input till EOF or exit
     while (getline(in, line))
     {
+        
         // empty command i.e 'enter key'
         if (line.empty())
         {
+            print_input_format();
             continue;
         }
 
@@ -36,6 +40,8 @@ void roosh_loop(std::istream &in)
             delete[] args[i];
         }
         delete[] args;
+
+        print_input_format();
     }
 }
 

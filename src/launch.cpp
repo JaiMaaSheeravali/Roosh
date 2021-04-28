@@ -9,12 +9,14 @@ using namespace std;
 const char *builtin_list[] = {
     "cd",
     "history",
-    "exit"};
+    "exit",
+    "rsh"};
 
 int (*builtin_func[])(char **) = {
     &roosh_cd,
     &roosh_history,
-    &roosh_exit};
+    &roosh_exit,
+    &roosh_rsh};
 
 bool roosh_exec(char **args)
 {
@@ -30,10 +32,7 @@ bool roosh_exec(char **args)
         // child process
         if (execvp(args[0], args) == -1)
         {
-            // kill the child process if an
-            // error occurs
             cerr << "no such command exists\n";
-            _Exit(EXIT_FAILURE);
         }
     }
 
