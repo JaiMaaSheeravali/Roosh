@@ -32,7 +32,10 @@ bool roosh_exec(char **args)
         // child process
         if (execvp(args[0], args) == -1)
         {
+            // kill the child process if an
+            // error occurs
             cerr << "no such command exists\n";
+            _Exit(EXIT_FAILURE);
         }
     }
 
@@ -41,7 +44,7 @@ bool roosh_exec(char **args)
     return 1;
 }
 
-bool roosh_launch(char **args, int n)
+bool roosh_launch(char **args, int num_args)
 {
     if (args[0] == NULL)
     {

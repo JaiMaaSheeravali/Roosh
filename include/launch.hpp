@@ -4,4 +4,4 @@
 
 #pragma once
 
-bool roosh_launch(char **args, int n);
+bool roosh_launch(char **args, int num_args);
