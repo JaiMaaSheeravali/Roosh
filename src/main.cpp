@@ -16,7 +16,7 @@ void roosh_loop(std::istream &in)
     // keep taking the input till EOF or exit
     while (getline(in, line))
     {
-        
+
         // empty command i.e 'enter key'
         if (line.empty())
         {

@@ -32,6 +32,6 @@ std::pair<char **, int> roosh_parse(const string &line)
 
     // null needed for execvp to function properly
     args[n] = NULL;
-    
+
     return {args, n};
 }
