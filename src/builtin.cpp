@@ -22,12 +22,12 @@ int roosh_cd(char **args)
     // if chdir failed print the error_message
     if (chdir(args[1]) == -1)
     {
-        cerr << "cd: "<< args[1] <<": No such file or directory\n";
+        cerr << "cd: " << args[1] << ": No such file or directory\n";
     }
     return 1;
 }
 
-// this will take a stream and run all 
+// this will take a stream and run all
 // commands in that stream in batch mode
 void roosh_batch_loop(std::istream &in)
 {
@@ -36,7 +36,7 @@ void roosh_batch_loop(std::istream &in)
     // keep taking the input till EOF or exit
     while (getline(in, line))
     {
-        
+
         // empty command i.e 'enter key'
         if (line.empty() || line[0] == '#')
         {
@@ -53,11 +53,11 @@ void roosh_batch_loop(std::istream &in)
             delete[] args[i];
         }
         delete[] args;
-
     }
 }
 
-int roosh_rsh(char **args){
+int roosh_rsh(char **args)
+{
 
     // Produce error if no file is specified.
     if (args[1] == NULL)
@@ -69,15 +69,18 @@ int roosh_rsh(char **args){
     // Check if extension of file is correct or not
     int slen = strlen(args[1]);
     char buf[5];
-    strncpy(buf, args[1]+slen-4, 4);
+    strncpy(buf, args[1] + slen - 4, 4);
 
-    if(strcmp(buf, ".rsh") == 0){
-        
+    if (strcmp(buf, ".rsh") == 0)
+    {
+
         // Make a file stream from file and call roosh batch loop
         std::ifstream infile(args[1]);
-        
+
         roosh_batch_loop(infile);
-    } else {
+    }
+    else
+    {
         cerr << "Invalid File Format! Not a Batch File.\n";
     }
     return 1;
