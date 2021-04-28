@@ -24,8 +24,8 @@ void roosh_loop(std::istream &in)
             continue;
         }
 
-        auto [args, n] = roosh_parse(line);
-        bool status = roosh_launch(args, n);
+        auto [args, num_args] = roosh_parse(line);
+        bool status = roosh_launch(args, num_args);
 
         // status equals false when
         // exit command is run by the user
@@ -35,7 +35,7 @@ void roosh_loop(std::istream &in)
         }
 
         // deallocating memory
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < num_args; i++)
         {
             delete[] args[i];
         }

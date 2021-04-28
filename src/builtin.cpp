@@ -44,11 +44,11 @@ void roosh_batch_loop(std::istream &in)
         }
 
         // exit through batch mode isn't allowed
-        auto [args, n] = roosh_parse(line);
-        roosh_launch(args, n);
+        auto [args, num_args] = roosh_parse(line);
+        roosh_launch(args, num_args);
 
         // deallocating memory
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < num_args; i++)
         {
             delete[] args[i];
         }
