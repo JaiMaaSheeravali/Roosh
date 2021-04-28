@@ -6,6 +6,7 @@
 #include "../include/parse.hpp"
 #include "../include/launch.hpp"
 #include "../include/input.hpp"
+#include "../include/builtin.hpp"
 using namespace std;
 
 void roosh_loop(std::istream &in)
@@ -23,6 +24,9 @@ void roosh_loop(std::istream &in)
             print_input_format();
             continue;
         }
+
+        // pushing 'line' into the history
+        push_command(line);
 
         auto [args, num_args] = roosh_parse(line);
         bool status = roosh_launch(args, num_args);
