@@ -4,7 +4,6 @@
 #include <string.h>
 #include <iostream>
 
-#include <sys/wait.h>
 #include <../include/color.hpp>
 
 using namespace std;
@@ -13,7 +12,6 @@ void print_git_branch();
 
 void print_input_format()
 {
-    wait(NULL);
     cout << flush;
 
     char hostname[50];
@@ -49,19 +47,21 @@ void print_git_branch()
     // Get current branch and save its name in a file.
     fp = popen("git branch --show-current 2>/dev/null", "r");
 
-    if (fp == NULL)
+    if (fp == NULL){
+        pclose(fp);
         return;
+    }
 
     // Read branch name and print current branch name
     fgets(branch_name, 200, fp);
     branch_name[strcspn(branch_name, "\n")] = 0;
+
+    // Should check status if any error occurs
+    pclose(fp);
 
     if (branch_name && strcmp(branch_name, "") == 0)
         return;
 
     // print current branch name in red enclosed in round braces
     cout << RED << " (" << branch_name << ")" << RESET;
-
-    // Should check status if any error occurs
-    pclose(fp);
 }
