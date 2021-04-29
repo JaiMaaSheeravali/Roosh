@@ -16,8 +16,7 @@ c++17 required
  
  <h3>Remaining</h3>
   <ol>
-   <li>History command left</li>
+   <li><s>History command left</s></li>
    <li>Pipes and redirections are not yet supported</li>
    <li>Extra arguments are not checked sometimes</li>
   </ol>
-

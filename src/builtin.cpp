@@ -3,11 +3,17 @@
 #include <string.h>
 #include <sstream>
 #include <fstream>
+#include <vector>
+#include <string>
+#include <iomanip>
 
 #include "../include/parse.hpp"
 #include "../include/launch.hpp"
-
 using namespace std;
+
+// vector to store list of commands
+vector<string> list_cmds;
+
 int roosh_cd(char **args)
 {
     // number of arguments must be exactly two
@@ -86,10 +92,52 @@ int roosh_rsh(char **args)
     return 1;
 }
 
+// roosh_history implementation
+
+// used by the main program to push
+// a new commmand into the list of
+// commands ran so far
+void push_command(string line)
+{
+    // remove whitespaces from the command
+    string cmd;
+
+    // Used to split string around spaces.
+    istringstream iss(line);
+
+    string word; // for storing each word
+
+    while (iss >> word)
+    {
+        cmd += word;
+        cmd += ' ';
+    }
+
+    list_cmds.push_back(cmd);
+}
+
+// prints the commands ran so far
 int roosh_history(char **args)
 {
+    // only one argument i.e history
+    // is expected
+    if (args[1] != NULL)
+    {
+        cerr << "error history: unexpected number of arguments\n";
+        return 1;
+    }
+
+    int id = 1;
+    for (auto cmd : list_cmds)
+    {
+        cout << "  " << std::left << setw(4) << id << " ";
+        cout << cmd << endl;
+        id++;
+    }
+
     return 1;
 }
+
 int roosh_exit(char **args)
 {
     // only one arg should be given
