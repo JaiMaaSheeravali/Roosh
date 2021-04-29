@@ -1,13 +1,18 @@
 #include <unistd.h>
 #include <limits.h>
 #include <pwd.h>
-#include <stdio.h>
 #include <string.h>
+#include <iostream>
+
+#include <../include/color.hpp>
+
+using namespace std;
 
 void print_git_branch();
 
 void print_input_format()
 {
+    cout << flush;
 
     char hostname[50];
     struct passwd *p = getpwuid(getuid());
@@ -15,30 +20,29 @@ void print_input_format()
     // Get the host name and user name of current user
     if (gethostname(hostname, sizeof(hostname)) == 0 && p)
     {
-        printf("\033[;34m%s@", p->pw_name);
-        printf("%s\033[0m:", hostname);
+        cout << BLUE << p->pw_name << "@";
+        cout << hostname << RESET;
     }
 
     // Print the current working directory of user
     char cwd[100];
+
+    cout << GREEN;
     if (getcwd(cwd, sizeof(cwd)) != NULL)
-    {
-        printf("\033[;32m%s\033[0m", cwd);
-    }
+        cout << cwd;
     else
-    {
-        printf("\033[;32m.\033[0m");
-    }
+        cout << ".";
+    cout << RESET;
 
     // Get git branch if current directory is a git directory
     print_git_branch();
-    printf("₹ ");
+    cout << "₹ " << flush;
 }
 
 void print_git_branch()
 {
     FILE *fp;
-    char path[400];
+    char branch_name[400];
 
     // Get current branch and save its name in a file.
     fp = popen("git branch --show-current 2>/dev/null", "r");
@@ -47,14 +51,14 @@ void print_git_branch()
         return;
 
     // Read branch name and print current branch name
-    fgets(path, 200, fp);
-    path[strcspn(path, "\n")] = 0;
+    fgets(branch_name, 200, fp);
+    branch_name[strcspn(branch_name, "\n")] = 0;
 
-    if (path && strcmp(path, "") == 0)
+    if (branch_name && strcmp(branch_name, "") == 0)
         return;
 
     // print current branch name in red enclosed in round braces
-    printf(" \033[31m(%s)\033[0m", path);
+    cout << RED << " (" << branch_name << ")" << RESET;
 
     // Should check status if any error occurs
     pclose(fp);
