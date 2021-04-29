@@ -4,6 +4,7 @@
 #include <string.h>
 #include <iostream>
 
+#include <sys/wait.h>
 #include <../include/color.hpp>
 
 using namespace std;
@@ -12,6 +13,7 @@ void print_git_branch();
 
 void print_input_format()
 {
+    wait(NULL);
     cout << flush;
 
     char hostname[50];
