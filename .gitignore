@@ -2,3 +2,4 @@
 output/
 main
 *.o
+a.out
