@@ -10,9 +10,9 @@ const char *builtin_list[] = {
     "cd",
     "history",
     "exit",
-    "rsh"};
+    "roosh"};
 
-int (*builtin_func[])(char **) = {
+int (*builtin_func[])(char **, int) = {
     &roosh_cd,
     &roosh_history,
     &roosh_exit,
@@ -57,7 +57,7 @@ bool roosh_launch(char **args, int num_args)
     {
         if (strcmp(builtin_list[i], args[0]) == 0)
         {
-            return (*builtin_func[i])(args);
+            return (*builtin_func[i])(args, num_args);
         }
     }
 

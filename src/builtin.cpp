@@ -6,6 +6,8 @@
 #include <vector>
 #include <string>
 #include <iomanip>
+#include <sys/types.h>
+#include <pwd.h>
 
 #include "../include/parse.hpp"
 #include "../include/launch.hpp"
@@ -14,21 +16,39 @@ using namespace std;
 // vector to store list of commands
 vector<string> list_cmds;
 
-int roosh_cd(char **args)
+// Function to print error message when
+void invalid_arg_count_error(int num_args, int required_args){
+    cerr << "Error: Invalid number of Arguments(" << num_args-1 << " given) - " << required_args << " Required!\n";
+}
+
+int roosh_cd(char **args, int num_args)
 {
     // number of arguments must be exactly two
     // first one is "cd"
     // second is directory path
-    if (args[1] == NULL)
+    if (num_args == 1)
     {
-        cerr << "cd: unexpected number of arguments\n";
+        cerr << "Error cd: Target directory address not given\n";
         return 1;
+    }
+
+    // Display error if extra arguments are given
+    if(num_args > 2){
+        invalid_arg_count_error(num_args, 1);
+        return 1;
+    }
+
+    // change args[1] by home directory location if "cd ~" is used
+    if(strcmp(args[1], "~") == 0){
+
+        struct passwd *pw = getpwuid(getuid());
+        args[1] = strdup(pw->pw_dir);
     }
 
     // if chdir failed print the error_message
     if (chdir(args[1]) == -1)
     {
-        cerr << "cd: " << args[1] << ": No such file or directory\n";
+        cerr << "Error! " << args[1] << ": No such directory exits\n";
     }
     return 1;
 }
@@ -62,13 +82,19 @@ void roosh_batch_loop(std::istream &in)
     }
 }
 
-int roosh_rsh(char **args)
+int roosh_rsh(char **args, int num_args)
 {
 
     // Produce error if no file is specified.
-    if (args[1] == NULL)
+    if (num_args == 1)
     {
         cerr << "Batch Mode: No file specified to run in Batch Mode\n";
+        return 1;
+    }
+
+    // Display error if extra arguments are given
+    if(num_args > 2){
+        invalid_arg_count_error(num_args, 1);
         return 1;
     }
 
@@ -117,13 +143,13 @@ void push_command(string line)
 }
 
 // prints the commands ran so far
-int roosh_history(char **args)
+int roosh_history(char **args, int num_args)
 {
     // only one argument i.e history
     // is expected
-    if (args[1] != NULL)
+    if (num_args > 1)
     {
-        cerr << "error history: unexpected number of arguments\n";
+        invalid_arg_count_error(num_args, 0);
         return 1;
     }
 
@@ -138,11 +164,12 @@ int roosh_history(char **args)
     return 1;
 }
 
-int roosh_exit(char **args)
+int roosh_exit(char **args, int num_args)
 {
     // only one arg should be given
-    if (args[1] != NULL)
+    if (num_args > 1)
     {
+        invalid_arg_count_error(num_args, 0);
         return 1;
     }
 
