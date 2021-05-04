@@ -11,6 +11,7 @@ using namespace std;
 
 void roosh_loop(std::istream &in)
 {
+    // Perform REPL(read, write, execute, loop) loop.
     string line;
     print_input_format();
 
@@ -38,7 +39,8 @@ void roosh_loop(std::istream &in)
             exit(EXIT_SUCCESS);
         }
 
-        // deallocating memory
+        // deallocating memory.
+        // perform any shutdown cleanup.
         for (int i = 0; i < num_args; i++)
         {
             delete[] args[i];
