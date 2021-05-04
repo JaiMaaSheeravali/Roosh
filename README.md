@@ -1,8 +1,21 @@
+**To execute the shell:**
 make
-
 ./output/main
 
 c++17 required
+
+**Theory:**
+
+- The basic shell perform these basic operations:
+
+  1. Load config files
+  2. Run REPL loop
+  3. Clean up memory to prevent leakage.
+
+- In the Loop part following operations are performed:
+  1. Read the commands entered by the user.
+  2. It will parse the commands so computer can understand the commands.
+  3. Execute the commands.
 
 <h2>Core Features:</h2>
 
