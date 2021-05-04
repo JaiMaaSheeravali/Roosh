@@ -17,8 +17,9 @@ using namespace std;
 vector<string> list_cmds;
 
 // Function to print error message when
-void invalid_arg_count_error(int num_args, int required_args){
-    cerr << "Error: Invalid number of Arguments(" << num_args-1 << " given) - " << required_args << " Required!\n";
+void invalid_arg_count_error(int num_args, int required_args)
+{
+    cerr << "Error: Invalid number of Arguments(" << num_args - 1 << " given) - " << required_args << " Required!\n";
 }
 
 int roosh_cd(char **args, int num_args)
@@ -33,13 +34,15 @@ int roosh_cd(char **args, int num_args)
     }
 
     // Display error if extra arguments are given
-    if(num_args > 2){
+    if (num_args > 2)
+    {
         invalid_arg_count_error(num_args, 1);
         return 1;
     }
 
     // change args[1] by home directory location if "cd ~" is used
-    if(strcmp(args[1], "~") == 0){
+    if (strcmp(args[1], "~") == 0)
+    {
 
         struct passwd *pw = getpwuid(getuid());
         args[1] = strdup(pw->pw_dir);
@@ -93,7 +96,8 @@ int roosh_rsh(char **args, int num_args)
     }
 
     // Display error if extra arguments are given
-    if(num_args > 2){
+    if (num_args > 2)
+    {
         invalid_arg_count_error(num_args, 1);
         return 1;
     }

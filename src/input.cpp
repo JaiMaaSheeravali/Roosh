@@ -47,7 +47,8 @@ void print_git_branch()
     // Get current branch and save its name in a file.
     fp = popen("git branch --show-current 2>/dev/null", "r");
 
-    if (fp == NULL){
+    if (fp == NULL)
+    {
         pclose(fp);
         return;
     }
