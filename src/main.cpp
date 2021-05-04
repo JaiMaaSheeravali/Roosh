@@ -2,58 +2,27 @@
 #include <string>
 #include <utility>
 #include <fstream>
-
+#include <csignal>
+#include "../include/loop.hpp"
 #include "../include/parse.hpp"
 #include "../include/launch.hpp"
 #include "../include/input.hpp"
 #include "../include/builtin.hpp"
 using namespace std;
 
-void roosh_loop(std::istream &in)
-{
-    // Perform REPL(read, write, execute, loop) loop.
-    string line;
-    print_input_format();
 
-    // keep taking the input till EOF or exit
-    while (getline(in, line))
-    {
-
-        // empty command i.e 'enter key'
-        if (line.empty())
-        {
-            print_input_format();
-            continue;
-        }
-
-        // pushing 'line' into the history
-        push_command(line);
-
-        auto [args, num_args] = roosh_parse(line);
-        bool status = roosh_launch(args, num_args);
-
-        // status equals false when
-        // exit command is run by the user
-        if (status == false)
-        {
-            exit(EXIT_SUCCESS);
-        }
-
-        // deallocating memory.
-        // perform any shutdown cleanup.
-        for (int i = 0; i < num_args; i++)
-        {
-            delete[] args[i];
-        }
-        delete[] args;
-
-        print_input_format();
-    }
+void signal_handler(int sig_num){
+    // Prevent user to exit with Ctrl+C
+    signal(SIGINT, signal_handler);
+    cout << "\n Oops! It seems you are trying to exit. Please use exit command\n";
+    cout << "Press enter to continue";
+    fflush(stdout);
 }
 
 int main(int argc, char *argv[])
 {
 
+    signal(SIGINT, signal_handler);
     if (argc > 2)
     {
         cerr << "unexpected arguments\n";
