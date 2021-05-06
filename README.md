@@ -38,3 +38,10 @@ c++17 required
    <li><s>Pipes and redirections are not yet supported</s></li>
    <li><s>Extra arguments are not checked sometimes</s></li>
   </ol>
+
+Errors and Solutions:
+1. If cmake .  fails with message : 
+  - "Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the", 
+  then run command 
+  - sudo apt-get install libssl-dev
+  on your terminal(tested for ubuntu 18.04 LTS)
