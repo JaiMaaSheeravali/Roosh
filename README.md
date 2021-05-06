@@ -1,4 +1,5 @@
 **To execute the shell:**
+cmake .
 make
 ./output/main
 
