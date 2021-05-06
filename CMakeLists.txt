@@ -9,8 +9,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/output)
 # creates the variable EXEC and sets it to hello
 set(EXEC main)
 
-# set the C++14 standard
-set(CMAKE_CXX_STANDARD 14)
+# set the C++17 standard
+set(CMAKE_CXX_STANDARD 17)
 
 # I../includes
 include_directories(include)

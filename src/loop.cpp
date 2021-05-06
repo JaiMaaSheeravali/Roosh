@@ -22,13 +22,14 @@ typedef struct Buffer
     string buffer;
 } InputBuffer;
 
-
-void clear_console(struct Buffer keyboard){
+void clear_console(struct Buffer keyboard)
+{
     /* clear the output in console by placing
        cursor at appropiate position */
 
     int remaining = keyboard.buffer.length() - keyboard.position;
-    while(remaining>0){
+    while (remaining > 0)
+    {
         moveforward();
         remaining--;
     }
@@ -40,13 +41,15 @@ void clear_console(struct Buffer keyboard){
     return;
 }
 
-void recover_console(struct Buffer keyboard){
+void recover_console(struct Buffer keyboard)
+{
     /* place the cursor at
      appropiate position after output*/
 
     cout << keyboard.buffer;
     int remaining = keyboard.buffer.length() - keyboard.position;
-    while(remaining>0){
+    while (remaining > 0)
+    {
         movebackward();
         remaining--;
     }
@@ -62,18 +65,18 @@ void roosh_loop(std::istream &in)
     static struct termios old, current;
     tcgetattr(0, &old); // store the current terminal setting
     current = old;
-    current.c_lflag &= ~ICANON;      // allow auto submit as soon as charachter is entered
-    current.c_lflag &= ~ECHO;        // turn of the automatic display of input
+    current.c_lflag &= ~ICANON; // allow auto submit as soon as charachter is entered
+    current.c_lflag &= ~ECHO;   // turn of the automatic display of input
     current.c_cc[VMIN] = 1;
     current.c_cc[VTIME] = 0;
     tcsetattr(0, TCSANOW, &current); // set the new settings
 
-    vector <string> history;
+    vector<string> history;
 
     int historyCount = 0; // The total number of commands that the user entered
     char keyword;
     int historyIndex = -1;
-    InputBuffer keyboard = {.position = 0, .buffer=""}; // contain the input
+    InputBuffer keyboard = {.position = 0, .buffer = ""}; // contain the input
     string temp;
     print_input_format();
 
@@ -94,7 +97,7 @@ void roosh_loop(std::istream &in)
                 if (historyIndex == -1)
                 {
                     // Store the current string temporarily
-                    temp=keyboard.buffer;
+                    temp = keyboard.buffer;
                 }
 
                 historyIndex++;
@@ -102,9 +105,9 @@ void roosh_loop(std::istream &in)
                 {
                     historyIndex = historyCount - 1;
                 }
-                else if (historyIndex > (int)history.size()-1)
+                else if (historyIndex > (int)history.size() - 1)
                 {
-                    historyIndex = history.size()-1;
+                    historyIndex = history.size() - 1;
                 }
 
                 break;
@@ -119,7 +122,8 @@ void roosh_loop(std::istream &in)
                 break;
 
             case 'C': // Right arrow
-                if(keyboard.position >= (int)keyboard.buffer.length()){
+                if (keyboard.position >= (int)keyboard.buffer.length())
+                {
                     continue;
                 }
                 moveforward();
@@ -128,7 +132,8 @@ void roosh_loop(std::istream &in)
                 break;
 
             case 'D': // Left arrow
-                if(keyboard.position <= 0){
+                if (keyboard.position <= 0)
+                {
                     continue;
                 }
                 keyboard.position--;
@@ -145,7 +150,7 @@ void roosh_loop(std::istream &in)
             // Replaces the string in the buffer with what the user typed in
             if (historyIndex == -1)
             {
-                keyboard.buffer=temp;
+                keyboard.buffer = temp;
             }
 
             // Replaces the string in the buffer with a previous command using the arrow key
@@ -168,14 +173,14 @@ void roosh_loop(std::istream &in)
             }
             clear_console(keyboard);
             // remove the keyword from appropiate position
-            keyboard.buffer.erase(keyboard.position-1, 1);
+            keyboard.buffer.erase(keyboard.position - 1, 1);
             keyboard.position--;
             recover_console(keyboard);
         }
         else if (keyword == '~')
         {
             // If Delete key is used
-            if (keyboard.position == (int) keyboard.buffer.length())
+            if (keyboard.position == (int)keyboard.buffer.length())
             {
                 continue;
             }
@@ -190,7 +195,7 @@ void roosh_loop(std::istream &in)
             string line = keyboard.buffer;
             // empty command i.e 'enter key'
             if (line.empty())
-            {   
+            {
                 print_input_format();
                 continue;
             }
@@ -198,8 +203,8 @@ void roosh_loop(std::istream &in)
             // pushing 'line' into the history
             push_command(line);
 
-            auto [args, n] = roosh_parse(line);
-            bool status = roosh_launch(args, n);
+            // execute all the commands specified in the line
+            bool status = roosh_launch(line);
 
             history.insert(history.begin(), keyboard.buffer);
 
@@ -217,17 +222,11 @@ void roosh_loop(std::istream &in)
             keyboard.position = 0;
             historyIndex = -1;
 
-            // deallocating memory
-            for (int i = 0; i < n; i++)
-            {
-                delete[] args[i];
-            }
-            delete[] args;
-
             print_input_format();
             fflush(stdout);
         }
-        else if(keyword == '\t'){
+        else if (keyword == '\t')
+        {
             // If tab key is pressed
             continue;
         }
@@ -238,7 +237,7 @@ void roosh_loop(std::istream &in)
 
             clear_console(keyboard);
             // insert keyword at appropiate position
-            keyboard.buffer.insert(keyboard.position, string(1,keyword));
+            keyboard.buffer.insert(keyboard.position, string(1, keyword));
             keyboard.position++; // update position
             recover_console(keyboard);
         }

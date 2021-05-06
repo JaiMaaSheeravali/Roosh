@@ -1,25 +1,66 @@
-#include <iostream>
-#include <unistd.h>
-#include <string.h>
-#include <sstream>
-#include <fstream>
-#include <vector>
-#include <string>
-#include <iomanip>
-#include <sys/types.h>
+#include "../include/builtin.hpp"
+
 #include <pwd.h>
+#include <string.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
 
 #include "../include/parse.hpp"
 #include "../include/launch.hpp"
+
 using namespace std;
 
-// vector to store list of commands
+// function pointers to builtin functions
+int (*builtin_func[])(char **, int) = {
+    &roosh_cd,
+    &roosh_history,
+    &roosh_exit,
+    &roosh_rsh};
+
+// vector to store history of list of commands
 vector<string> list_cmds;
 
 // Function to print error message when
 void invalid_arg_count_error(int num_args, int required_args)
 {
     cerr << "Error: Invalid number of Arguments(" << num_args - 1 << " given) - " << required_args << " Required!\n";
+}
+
+int check_builtin(const std::string &cmd)
+{
+    for (size_t i = 0; i < builtin_list.size(); i++)
+    {
+        if (cmd.substr(0, cmd.find(" ")) == builtin_list[i])
+        {
+            return i; // return index of which builtin command to be run
+        }
+    }
+
+    // return -1 if command is not a built-in command
+    return -1;
+}
+
+bool run_builtin(const string &cmd, int idx)
+{
+    auto [args, num_args] = roosh_parse(cmd);
+
+    // run the idx'th command from bulitin_list
+    bool status = (*builtin_func[idx])(args, num_args);
+
+    // deallocating memory
+    for (int i = 0; i < num_args; i++)
+    {
+        delete[] args[i];
+    }
+    delete[] args;
+
+    return status;
 }
 
 int roosh_cd(char **args, int num_args)
@@ -43,7 +84,6 @@ int roosh_cd(char **args, int num_args)
     // change args[1] by home directory location if "cd ~" is used
     if (strcmp(args[1], "~") == 0)
     {
-
         struct passwd *pw = getpwuid(getuid());
         args[1] = strdup(pw->pw_dir);
     }
@@ -73,15 +113,7 @@ void roosh_batch_loop(std::istream &in)
         }
 
         // exit through batch mode isn't allowed
-        auto [args, num_args] = roosh_parse(line);
-        roosh_launch(args, num_args);
-
-        // deallocating memory
-        for (int i = 0; i < num_args; i++)
-        {
-            delete[] args[i];
-        }
-        delete[] args;
+        roosh_launch(line);
     }
 }
 
@@ -122,7 +154,7 @@ int roosh_rsh(char **args, int num_args)
     return 1;
 }
 
-// roosh_history implementation
+/*** roosh_history implementation ***/
 
 // used by the main program to push
 // a new commmand into the list of
