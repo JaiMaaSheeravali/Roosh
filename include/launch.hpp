@@ -4,4 +4,6 @@
 
 #pragma once
 
-bool roosh_launch(char **args, int num_args);
+#include <string>
+
+bool roosh_launch(const std::string &line);
