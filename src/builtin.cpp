@@ -13,6 +13,7 @@
 
 #include "../include/parse.hpp"
 #include "../include/launch.hpp"
+#include "../include/google.hpp"
 
 using namespace std;
 
@@ -21,7 +22,8 @@ int (*builtin_func[])(char **, int) = {
     &roosh_cd,
     &roosh_history,
     &roosh_exit,
-    &roosh_rsh};
+    &roosh_rsh,
+    &roosh_google};
 
 // vector to store history of list of commands
 vector<string> list_cmds;
@@ -210,4 +212,30 @@ int roosh_exit(char **args, int num_args)
     }
 
     return 0;
+}
+
+// helps google words
+int roosh_google(char **args, int num_args)
+{
+    // only one argument i.e history
+    // is expected
+    if (num_args > 3)
+    {
+        invalid_arg_count_error(num_args, 0);
+        return 1;
+    }
+    if (!strcmp(args[1], "man"))
+    {
+        cout << "Format:\ngoogle <lang_code> <word_to_search>\nExample:google US hello\nCode\tLanguage\n==================\nUS\tEnglish (US)\nhi\tHindi\nes\tSpanish\nfr\tFrench\nja\tJapanese\nru\tRussian\nUK\tEnglish (UK)\nde\tGerman\nit\tItalian\nko\tKorean\nar\tArabic\ntr\tTurkish\n";
+    }
+    else if (num_args > 2)
+    {
+        if (!strcmp(args[1], "US"))
+            google_a_description(args[2], "en_US");
+        else if (!strcmp(args[1], "UK"))
+            google_a_description(args[2], "en_UK");
+        else
+            google_a_description(args[2], args[1]);
+    }
+    return 1;
 }

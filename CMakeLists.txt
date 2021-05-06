@@ -5,6 +5,10 @@ cmake_minimum_required(VERSION 3.5.1)
 # project name
 project(Roosh)
 
+include(FetchContent)
+FetchContent_Declare(cpr GIT_REPOSITORY https://github.com/whoshuu/cpr.git GIT_TAG c8d33915dbd88ad6c92b258869b03aba06587ff9) # the commit hash for 1.5.0
+FetchContent_MakeAvailable(cpr)
+
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/output)
 # creates the variable EXEC and sets it to hello
 set(EXEC main)
@@ -20,3 +24,5 @@ file(GLOB SOURCES src/*.cpp)
 
 # compiles the files defined by SOURCES to generante the executable defined by EXEC
 add_executable(${EXEC} ${SOURCES})
+
+target_link_libraries(${EXEC} PRIVATE cpr::cpr)

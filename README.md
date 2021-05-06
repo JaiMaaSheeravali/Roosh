@@ -30,6 +30,7 @@ c++17 required
     <li>Git Branch, Username, PC name and current directory display during input prompt.</li>
     <li>"exit" can be used to exit the shell and revert to default linux shell</li>
     <li>pipes ('|') and redirections ('<' or '>' or '>>') supported</li>
+    <li>Google a word for its meaning in more than 6 languages</li>
  </ol>
  
  <h3>Remaining</h3>
@@ -38,3 +39,13 @@ c++17 required
    <li><s>Pipes and redirections are not yet supported</s></li>
    <li><s>Extra arguments are not checked sometimes</s></li>
   </ol>
+
+**Errors and Solutions:**
+
+1. If cmake . fails with message :
+   `"Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the"`,
+
+   then run command
+
+   `sudo apt-get install libssl-dev`
+   on your terminal(tested for ubuntu 18.04 LTS)
