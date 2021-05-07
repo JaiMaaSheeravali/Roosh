@@ -36,7 +36,7 @@ c++17 required
  <h3>Remaining</h3>
   <ol>
    <li>Aliases not yet implemented.</li>
-   <li>cd is not fully implemented</li>
+   <li>cd is not fully functional.</li>
   </ol>
 
 **Errors and Solutions:**
