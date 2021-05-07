@@ -35,9 +35,8 @@ c++17 required
  
  <h3>Remaining</h3>
   <ol>
-   <li><s>History command left</s></li>
-   <li><s>Pipes and redirections are not yet supported</s></li>
-   <li><s>Extra arguments are not checked sometimes</s></li>
+   <li>Aliases not yet implemented.</li>
+   <li>cd is not fully implemented</li>
   </ol>
 
 **Errors and Solutions:**
