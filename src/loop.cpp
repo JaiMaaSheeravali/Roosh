@@ -3,10 +3,15 @@
 #include <string.h>
 #include <termios.h>
 #include <vector>
+#include <dirent.h>
+#include <csignal>
+#include <iomanip>
+#include <sys/types.h>
 #include "../include/launch.hpp"
 #include "../include/input.hpp"
 #include "../include/parse.hpp"
 #include "../include/builtin.hpp"
+#include "../include/complete.hpp"
 #define MAX_BUFFER_SIZE 1024
 
 #define moveforward() cout << "\033[C"
@@ -163,7 +168,6 @@ void roosh_loop(std::istream &in)
 
             cout << keyboard.buffer;
         }
-
         else if (keyword == 0x7f)
         {
             // If Backspace charachter is used
@@ -228,7 +232,50 @@ void roosh_loop(std::istream &in)
         else if (keyword == '\t')
         {
             // If tab key is pressed
-            continue;
+            vector<string> files = complete(keyboard.buffer);
+            if (files.size() != 0)
+            {
+                if (files.size() == 1)
+                {
+                    string temp1;
+                    int index = keyboard.buffer.find_last_of("/");
+                    if (index == -1)
+                    {
+                        index = keyboard.buffer.find_last_of(" ");
+                        if(index!=-1){
+                            temp1 = keyboard.buffer.substr(0, index+1);
+                        }
+                        else{
+                            temp1 = "";
+                        }
+                    }
+                    else{
+                        temp1 = keyboard.buffer.substr(0, index+1);
+                    }
+                    clear_console(keyboard);
+                    keyboard.buffer = temp1 + files[0];
+                    keyboard.position = keyboard.buffer.length();
+                    cout << keyboard.buffer;
+                }
+                else
+                {
+                    cout << "\n";
+                    int count = 0;
+                    for (auto i = files.begin(); i != files.end(); i++)
+                    {
+                        if (count == 4)
+                        {
+                            cout << "\n";
+                            count = 0;
+                        }
+                        cout << left << setw(40) << setfill(' ') << *i;
+                        count++;
+                    }
+                    cout << "\n";
+                    print_input_format();
+                    cout << keyboard.buffer;
+                }
+            }
         }
         else
         {
