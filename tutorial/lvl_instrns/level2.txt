@@ -1,0 +1,4 @@
+Commands you may need to solve the level
+ls cd cat
+
+Hint: ever heard about hidden files??

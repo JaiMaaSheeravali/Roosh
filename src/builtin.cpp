@@ -14,6 +14,7 @@
 #include "../include/parse.hpp"
 #include "../include/launch.hpp"
 #include "../include/google.hpp"
+#include "../include/tutorial.hpp"
 
 using namespace std;
 
@@ -23,7 +24,8 @@ int (*builtin_func[])(char **, int) = {
     &roosh_history,
     &roosh_exit,
     &roosh_rsh,
-    &roosh_google};
+    &roosh_google,
+    &roosh_exec_tutorial};
 
 // vector to store history of list of commands
 vector<string> list_cmds;
