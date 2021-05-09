@@ -226,18 +226,22 @@ int roosh_google(char **args, int num_args)
         invalid_arg_count_error(num_args, 0);
         return 1;
     }
-    if (!strcmp(args[1], "man"))
+    if (!strcmp(args[1], "--help"))
     {
-        cout << "Format:\ngoogle <lang_code> <word_to_search>\nExample:google US hello\nCode\tLanguage\n==================\nUS\tEnglish (US)\nhi\tHindi\nes\tSpanish\nfr\tFrench\nja\tJapanese\nru\tRussian\nUK\tEnglish (UK)\nde\tGerman\nit\tItalian\nko\tKorean\nar\tArabic\ntr\tTurkish\n";
+        cout << "Format:\ngoogle <word_to_search>  : In this default language is English US.\ngoogle <word_to_search> <lang_code> : To search in specific language.\n\nExample:\ngoogle hello\ngoogle hello US\n\nLang Code\tLanguage\n==================\nUS\tEnglish (US)\nhi\tHindi\nes\tSpanish\nfr\tFrench\nja\tJapanese\nru\tRussian\nUK\tEnglish (UK)\nde\tGerman\nit\tItalian\nko\tKorean\nar\tArabic\ntr\tTurkish\n";
     }
     else if (num_args > 2)
     {
-        if (!strcmp(args[1], "US"))
-            google_a_description(args[2], "en_US");
-        else if (!strcmp(args[1], "UK"))
-            google_a_description(args[2], "en_UK");
+        if (!strcmp(args[2], "US"))
+            google_a_description(args[1], "en_US");
+        else if (!strcmp(args[2], "UK"))
+            google_a_description(args[1], "en_UK");
         else
-            google_a_description(args[2], args[1]);
+            google_a_description(args[1], args[2]);
+    }
+    else
+    {
+        cout << "Please use google --help for any help.\n";
     }
     return 1;
 }
