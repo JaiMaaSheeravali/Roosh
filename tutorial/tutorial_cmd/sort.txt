@@ -1,0 +1,9 @@
+sort {{path/to/file}}
+Sort a file in ascending order
+sort --reverse {{path/to/file}}
+Sort a file in descending order
+sort --ignore-case {{path/to/file}}
+Sort a file in case-insensitive way
+sort --numeric-sort {{path/to/file}}
+Sort a file using numeric rather than alphabetic order
+

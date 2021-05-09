@@ -1,0 +1,14 @@
+Cat
+Print and concatenate files
+echo
+Print given arguments
+chmod
+Change the access permissions of a file or directory
+grep
+Find patterns in files using regular expressions
+sort
+Sort lines of text files
+hostnamectl
+to find hostname
+git
+used while working with git

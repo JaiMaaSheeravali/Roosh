@@ -1,0 +1,14 @@
+cd
+to go to different directory
+ls
+to list directory contents
+man
+display manual pages
+mv
+Move or rename files and directories
+mkdir
+Creates a directory
+rmdir
+Removes a directory
+touch
+Change a file access and modification times   

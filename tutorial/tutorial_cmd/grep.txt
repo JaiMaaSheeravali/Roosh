@@ -1,0 +1,5 @@
+grep "{{search_pattern}}" {{path/to/file}}
+Search for a pattern within a file
+grep --fixed-strings "{{exact_string}}" {{path/to/file}}
+Search for an exact string (disables regular expressions)
+

@@ -1,0 +1,4 @@
+rmdir {{path/to/directory}} 
+to remove directory *use rm-r to remove empty directory*
+rmdir -p {{path/to/directory}}  
+Remove the target and its parent directories (useful for nested dirs)
