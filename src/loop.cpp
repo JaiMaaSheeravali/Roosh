@@ -193,6 +193,10 @@ void roosh_loop(std::istream &in)
             keyboard.buffer.erase(keyboard.position, 1);
             recover_console(keyboard);
         }
+        else if(keyword == 0x4 || keyword == 0xc){
+            // If the Ctrl+D or Ctrl+L is pressed
+            raise(SIGINT);
+        }
         else if (keyword == '\n')
         {
             cout << "\n";
