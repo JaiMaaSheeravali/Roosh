@@ -8,6 +8,9 @@
 #include "../include/launch.hpp"
 #include "../include/levels.hpp"
 #include "../include/tutorial.hpp"
+#include <../include/color.hpp>
+#include <fstream>
+#include <iomanip>
 
 using namespace std;
 
@@ -110,8 +113,85 @@ int roosh_exec_tutorial(char **args, int num_args)
     }
 }
 
+void printcommand(string line, int width)
+{
+    const char separator = ' ';
+    cout << "      " << left << setw(width) << setfill(separator) << line;
+}
+void write_tutorial(string filepath)
+{
+    string line;
+
+    ifstream myfile(filepath);
+
+    if (myfile.is_open())
+    {
+        while (getline(myfile, line))
+        {
+            string cmd_path = home_dir + "/tutorial/tutorial_cmd/" + line + ".txt";
+            ifstream filename(cmd_path);
+            cout << MAGENTA;
+            printcommand(line, 60);
+            cout << RESET;
+            getline(myfile, line);
+            printcommand(line, 88);
+            cout << endl;
+            cout << endl;
+            string cmd;
+
+            if (filename.is_open())
+            {
+
+                while (getline(filename, cmd))
+                {
+                    cout << CYAN;
+                    printcommand(cmd, 60);
+                    getline(filename, cmd);
+                    cout << RESET;
+                    printcommand(cmd, 88);
+                    cout << endl;
+                    cout << endl;
+                }
+
+                filename.close();
+            }
+            int n = 50;
+            while (n--)
+                cout << "-";
+            cout << endl;
+            cout << endl;
+        }
+        myfile.close();
+    }
+
+    else
+        cout << "Unable to open file";
+}
+
 int roosh_tutorial()
 {
-    cout << "My tutorial :)\n";
+    cout << "\n"
+         << BLUE << "          "
+         << "Basic linux commands" << endl;
+    cout << RESET << endl;
+    write_tutorial(home_dir + "/tutorial/tutorial_cmd/basiccmdlist.txt");
+    cout << BLUE << "            "
+         << "Intermediate linux commands" << endl;
+    cout << RESET << endl;
+    write_tutorial(home_dir + "/tutorial/tutorial_cmd/intermediatecmdlist");
+    cout << MAGENTA << "pipes (|)" << RESET << "    "
+         << "to pass output of one command as intput to another" << endl;
+    cout << endl;
+    cout << MAGENTA << "Redirection" << RESET << endl;
+    cout << endl;
+    cout << "1.output redirection(<)"
+         << "       "
+         << " to fetch output to a file" << endl;
+    cout << endl;
+    cout << "2.Input redirection(>)"
+         << "        "
+         << " to take input from a file" << endl;
+    cout << endl;
+
     return 1;
 }
