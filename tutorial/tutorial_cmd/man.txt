@@ -1,0 +1,2 @@
+man {command} 
+Display the man page for a command

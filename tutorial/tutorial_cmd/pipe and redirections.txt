@@ -1,0 +1,2 @@
+command_1 | command_2 | command_3 | .... | command_N
+to pass output of one command acts as input to another command

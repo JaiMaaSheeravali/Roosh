@@ -1,0 +1,2 @@
+mkdir {{directory}}  
+Create a directory in current directory or given path

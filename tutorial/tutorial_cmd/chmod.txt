@@ -1,0 +1,15 @@
+chmod u+x {{file}}
+Give the [u]ser who owns a file the right to e[x]ecute it
+chmod u+rw {{file_or_directory}}
+Give the [u]ser rights to [r]ead and [w]rite to a file/directory
+chmod g-x {{file}}
+Remove e[x]ecutable rights from the [g]roup
+chmod a+rx {{file}}
+Give [a]ll users rights to [r]ead and e[x]ecute
+chmod o=g {{file}}
+give [o]thers (not in the file owner's group) the same rights as the [g]roup
+chmod o= {{file}}
+Remove all rights from [o]thers
+chmod -R g+w,o+w {{directory}}
+Change permissions recursively giving [g]roup and [o]thers the ability to [w]rite
+
