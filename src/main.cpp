@@ -16,8 +16,7 @@ void signal_handler(int sig_num)
 {
     // Prevent user to exit with Ctrl+C
     signal(SIGINT, signal_handler);
-    cout << "\n Oops! It seems you are trying to exit. Please use exit command\n";
-    cout << "Press enter to continue";
+    cout << "^C\n";
     fflush(stdout);
 }
 
