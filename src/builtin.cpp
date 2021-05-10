@@ -26,8 +26,7 @@ int (*builtin_func[])(char **, int) = {
     &roosh_rsh,
     &roosh_google,
     &roosh_exec_tutorial,
-    &roosh_calc
-    };
+    &roosh_calc};
 
 // vector to store history of list of commands
 vector<string> list_cmds;
@@ -241,6 +240,10 @@ int roosh_google(char **args, int num_args)
         else
             google_a_description(args[1], args[2]);
     }
+    else if (num_args == 2)
+    {
+        google_a_description(args[1], "en_US");
+    }
     else
     {
         cout << "Please use google --help for any help.\n";
@@ -248,7 +251,8 @@ int roosh_google(char **args, int num_args)
     return 1;
 }
 
-int roosh_calc(char **args, int num_args){
+int roosh_calc(char **args, int num_args)
+{
     // 2 argumets required
     // first is the calc command
     // second is the expresssiongi
@@ -263,10 +267,10 @@ int roosh_calc(char **args, int num_args){
         return 1;
     }
 
-    // tinyexpr evaluates the  
+    // tinyexpr evaluates the
 
     double answer = te_interp(args[1], 0);
     cout << answer << endl;
-    
+
     return 1;
 }
