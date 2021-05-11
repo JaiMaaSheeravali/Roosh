@@ -261,9 +261,11 @@ int roosh_calc(char **args, int num_args)
         invalid_arg_count_error(num_args, 1);
         return 1;
     }
-    if (num_args == 1)
+    if (num_args == 1 || !strcmp(args[1], "--help"))
     {
-        cerr << "Error calac: Expression not given\n";
+        cout << "\nFormat:\tcalc <expression> \n\n";
+        cout << "\t+\tAddition\n\t-\tSubtraction\n\t*\tMultiplication\n\t/\tDivide\n\t^\tExponent\n\t%\tModulus\n\t()\tBrackets\n\n";
+    
         return 1;
     }
 
