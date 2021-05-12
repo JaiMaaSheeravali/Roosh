@@ -212,8 +212,9 @@ void roosh_loop(std::istream &in)
             push_command(line);
 
             // execute all the commands specified in the line
+            tcsetattr(0, TCSANOW, &old); // restore original terminal settings
             bool status = roosh_launch(line);
-
+            tcsetattr(0, TCSANOW, &current); // set the new settings
             history.insert(history.begin(), keyboard.buffer);
 
             historyCount++;
