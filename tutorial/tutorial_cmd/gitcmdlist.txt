@@ -1,0 +1,16 @@
+git_config
+used while working with git
+git_init
+used to start a new repository
+git_clone
+clone a remote git repository
+git_add
+add file(s) to git staging area
+git_commit
+Commits a file and merges it in the current branch
+git_reset
+Used to undo changes
+git_push
+Pushes local commits to the remote repository
+git
+Miscellaneous git commands used for various purposes

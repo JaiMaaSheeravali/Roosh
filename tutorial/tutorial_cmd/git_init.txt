@@ -1,0 +1,2 @@
+git init [repository name]
+Used to start a new git repository in the current directory

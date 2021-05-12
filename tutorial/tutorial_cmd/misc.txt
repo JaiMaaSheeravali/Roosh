@@ -1,0 +1,8 @@
+clear
+used to clear the terminal and jump to start of terminal
+history
+Shows all the previously used shell commands in shell
+ping [domain-address]
+e.g: "ping google.com" can be used to check connectivity with the given domain
+exit
+Used to exit the shell or terminal

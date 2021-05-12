@@ -27,7 +27,7 @@ void print_input_format()
     // Print the current working directory of user
     char cwd[100];
 
-    cout << GREEN;
+    cout << ":" << GREEN;
     if (getcwd(cwd, sizeof(cwd)) != NULL)
         cout << cwd;
     else

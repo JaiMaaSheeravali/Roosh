@@ -1,25 +1,5 @@
-git config –global user.name “[name]”
-sets the author name to be used with your commits
-git config –global user.email “[email address]”  
-sets the email address to be used with your commits
-git init [repository name]
-to start a new repository
-git clone [url]
-to obtain a repository from an existing URL
-git add [file]
-adds a file to the staging area
-git add * 
-adds one or more to the staging area.
-git commit -m “[ Type in the commit message]”
-records or snapshots the file permanently in the version history
-git commit -a
-commits any files you’ve added with the git add command and also commits any files you’ve changed since then
 git diff –staged
 shows the differences between the files in the staging area and the latest version present
-git reset [file]  
-command unstages the file, but it preserves the file contents
-git reset [commit]  
-command undoes all the commits after the specified commit and preserves the changes locally
 git status  
 command lists all the files that have to be committed.
 git log  
@@ -32,12 +12,5 @@ git merge [branch name]
 merges the specified branch’s history into the current branch.
 git remote add [variable name] [Remote Server Link]  
 command is used to connect your local repository to the remote server
-git push [variable name] master
-sends the committed changes of master branch to your remote repository
-git push [variable name] [branch]  
-command sends the branch commits to your remote repository
-git push –all [variable name]  
-command pushes all branches to your remote repository
 git pull [Repository Link]  
 command fetches and merges changes on the remote server to your working directory
-

@@ -1,8 +1,6 @@
-cd path/to/directory  
-command to Go to the given directory
-cd 
+cd [path/to/directory]  
+command to Go to the given directory (either relative or absolute)
+cd ~
 command to go to home directory of current user
 cd ..
 Go up to the parent of the current directory
-cd -  
-Go to the previously chosen directory

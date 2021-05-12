@@ -1,6 +1,2 @@
 mv {{source}} {{target}}
-Move files in arbitrary locations
-mv -f {{source}} {{target}} 
-Do not prompt for confirmation before overwriting existing files
-mv -i {{source}} {{target}} 
-Prompt for confirmation before overwriting existing files, regardless of file permissions
+Move file/directory from source to target location

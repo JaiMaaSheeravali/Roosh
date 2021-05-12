@@ -1,0 +1,2 @@
+git clone [url]
+to obtain a repository from an existing URL (using ssh or https)

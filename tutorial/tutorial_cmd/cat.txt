@@ -6,4 +6,3 @@ cat {{file1}} {{file2}} >> {{target_file}}
 Append several files into the target file
 cat -n {{file}}
 Number all output lines:
-
