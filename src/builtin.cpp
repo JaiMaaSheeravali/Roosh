@@ -72,14 +72,6 @@ bool run_builtin(const string &cmd, int idx)
 
 int roosh_cd(char **args, int num_args)
 {
-    // number of arguments must be exactly two
-    // first one is "cd"
-    // second is directory path
-    if (num_args == 1)
-    {
-        cerr << "Error cd: Target directory address not given\n";
-        return 1;
-    }
 
     // Display error if extra arguments are given
     if (num_args > 2)
@@ -89,7 +81,7 @@ int roosh_cd(char **args, int num_args)
     }
 
     // change args[1] by home directory location if "cd ~" is used
-    if (strcmp(args[1], "~") == 0)
+    if (num_args == 1 || strcmp(args[1], "~") == 0)
     {
         struct passwd *pw = getpwuid(getuid());
         args[1] = strdup(pw->pw_dir);
