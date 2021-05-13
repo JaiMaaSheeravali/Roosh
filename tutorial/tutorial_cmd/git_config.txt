@@ -1,0 +1,4 @@
+git config -global user.name "[name]"
+sets the author name to be used with commits
+git config -global user.email "[email address]"
+sets the email address to be used with your commits

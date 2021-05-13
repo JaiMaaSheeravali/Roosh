@@ -1,0 +1,10 @@
+wc -l [filename]
+Prints the number of lines in a file.
+wc -w [filename]
+Prints the number of words in a file.
+wc -c [filename]
+Displays the count of bytes in a file.
+wc -m [filename]
+Prints the count of characters from a file.
+wc -L [filename]
+Prints only the length of the longest line in a file.

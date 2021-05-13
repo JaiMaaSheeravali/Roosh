@@ -1,0 +1,6 @@
+git push [remote repository name] master
+sends the committed changes of master branch to your remote repository
+git push [remote repository name] [branch]  
+command sends the branch commits to your remote repository
+git push –all [remote repository name]  
+command pushes all branches to your remote repository

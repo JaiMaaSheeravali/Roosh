@@ -1,0 +1,6 @@
+sudo apt-get update
+Fetches and updates list of available linux packages (requires internet)
+sudo apt-get install [Package-name]
+Download (if required) and install the package in linux
+sudo apt-get upgrade
+Updates all outdated Installed packages in linux.

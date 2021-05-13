@@ -1,0 +1,4 @@
+cp {{source}} {{target}}
+Make a copy of file at source to target location
+cp -r {{source}} {{target}}
+Recursively copy a directory at source to target address.

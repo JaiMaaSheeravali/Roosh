@@ -1,0 +1,4 @@
+git commit -m “[ Type in the commit message]”
+records or snapshots the file permanently in the version history
+git commit -a
+commits any files you’ve added with the git add command and also commits any files you’ve changed since then

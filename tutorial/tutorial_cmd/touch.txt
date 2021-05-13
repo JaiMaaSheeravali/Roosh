@@ -1,7 +1,4 @@
 touch {{filename}}  
-Create a new empty file(s) or change the times for existing file(s) to current time
-touch -t {{YYYYMMDDHHMM.SS}} {{filename}} 
-Set the times on a file to a specific date and time
-touch -r {{filename}} {{filename2}}   
-Use the times from a file to set the times on a second file
-
+Create a new empty file in the current directory
+touch {{filename1}} {{filename2}} ... {{filenamek}} 
+Create k empty files with given names in current directory

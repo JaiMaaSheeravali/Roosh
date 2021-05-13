@@ -1,0 +1,2 @@
+pwd
+Prints the complete path of current working directory (Also shown in green in input prompt)

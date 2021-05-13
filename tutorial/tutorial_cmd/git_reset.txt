@@ -1,0 +1,4 @@
+git reset [file]  
+command unstages the file, but it preserves the file contents
+git reset [commit]  
+command undoes all the commits after the specified commit and preserves the changes locally

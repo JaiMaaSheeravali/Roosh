@@ -12,4 +12,3 @@ chmod o= {{file}}
 Remove all rights from [o]thers
 chmod -R g+w,o+w {{directory}}
 Change permissions recursively giving [g]roup and [o]thers the ability to [w]rite
-

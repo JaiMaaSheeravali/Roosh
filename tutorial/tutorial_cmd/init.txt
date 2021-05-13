@@ -1,0 +1,2 @@
+git init [repository name]
+to start a new repository

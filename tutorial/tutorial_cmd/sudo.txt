@@ -1,0 +1,4 @@
+sudo [command]
+Runs any process/command with root or administrative Priviledges
+sudo su
+Runs all subsequent commands in current shell session with root Priviledges

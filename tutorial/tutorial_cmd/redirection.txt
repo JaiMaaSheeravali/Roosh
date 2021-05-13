@@ -1,0 +1,4 @@
+output redirection(<)
+to fetch output to a file
+Input redirection(>)
+to take input from a file

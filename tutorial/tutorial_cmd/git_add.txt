@@ -1,0 +1,6 @@
+git add [file]
+adds a file to the staging area
+git add [directory] 
+adds a directory to the staging area.
+git add .
+adds all files in current directory that are not staged

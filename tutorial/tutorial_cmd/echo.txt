@@ -2,10 +2,5 @@ echo "{{Hello World}}"
 Print a text message. Note: quotes are optional
 echo "{{My path is $PATH}}"
 Print a message with environment variables
-echo -n "{{Hello World}}"
-Print a message without the trailing newline
 echo "{{Hello World}}" >> {{file.txt}}
 Append a message to the file
-echo -e "{{Column 1\tColumn 2}}"
-Enable interpretation of backslash escapes (special characters):
-

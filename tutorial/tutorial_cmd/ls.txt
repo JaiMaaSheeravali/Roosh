@@ -1,10 +1,10 @@
 ls  
 ls command is used to list directory contents
 ls -1  
-List files one per line
+List details of file in current directory
 ls -a  
 List all files, including hidden files
-ls -F  
-List all files, with trailing / added to directory names
-ls -la 
-Long format list (permissions, ownership, size, and modification date) of all files
+ls -f  
+List all files, with trailing '/' added to directory names
+ls -alt 
+Long format list (permissions, ownership, size, and modification date) of all files (including hidden files)

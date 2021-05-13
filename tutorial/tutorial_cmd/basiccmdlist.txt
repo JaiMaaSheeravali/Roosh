@@ -4,6 +4,10 @@ ls
 to list directory contents
 man
 display manual pages
+sudo
+Give admin Priviledges to process
+apt-get
+Used to install and update packages in linux (often requires sudo or root Priviledges)
 mv
 Move or rename files and directories
 mkdir
@@ -12,3 +16,21 @@ rmdir
 Removes a directory
 touch
 Change a file access and modification times   
+cat
+Print and concatenate files
+echo
+Print given arguments
+chmod
+Change the access permissions of a file or directory
+grep
+Find patterns in files using regular expressions
+wc
+Used to count number of words or lines in a file
+sort
+Sort lines of text files
+pipes
+pass output of one command as intput to another
+redirection
+redirect output/input to or from a file respectively
+misc
+Miscellaneous useful Commands in linux

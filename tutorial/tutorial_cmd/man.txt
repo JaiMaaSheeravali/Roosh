@@ -1,2 +1,2 @@
 man {command} 
-Display the man page for a command
+Display the Official Linux manual page for a command
