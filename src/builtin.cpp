@@ -68,6 +68,8 @@ bool run_builtin(const string &cmd, int idx)
     return status;
 }
 
+/*** roosh change directory implementation ***/
+
 int roosh_cd(char **args, int num_args)
 {
     // number of arguments must be exactly two
@@ -100,6 +102,8 @@ int roosh_cd(char **args, int num_args)
     }
     return 1;
 }
+
+/*** roosh scripts.rsh implementation ***/
 
 // this will take a stream and run all
 // commands in that stream in batch mode
@@ -159,7 +163,7 @@ int roosh_rsh(char **args, int num_args)
     return 1;
 }
 
-/*** roosh_history implementation ***/
+/*** roosh history implementation ***/
 
 // used by the main program to push
 // a new commmand into the list of
@@ -197,6 +201,7 @@ int roosh_history(char **args, int num_args)
     int id = 1;
     for (auto cmd : list_cmds)
     {
+
         cout << "  " << std::left << setw(4) << id << " ";
         cout << cmd << endl;
         id++;
@@ -217,21 +222,60 @@ int roosh_exit(char **args, int num_args)
     return 0;
 }
 
-// helps google words
+/*** roosh google search implementation ***/
+
+// function to print two strings in two columns
+static void print_two_cols(const string &s1, const string &s2, int width)
+{
+    cout << "  " << std::left << setw(width) << s1 << " ";
+    cout << s2 << endl;
+}
+
+// function to print google help message
+static void print_google_help()
+{
+    cout << "  Format:\n"
+         << "  google <word_to_search>  : In this default language is English US.\n"
+         << "  google <word_to_search> <lang_code> : To search in specific language.\n\n"
+         << "  Example:\n"
+         << "  google hello\n"
+         << "  google hello US\n\n";
+
+    print_two_cols("--------------", "---------", 20);
+    print_two_cols("Language Code", "Language", 20);
+    print_two_cols("--------------", "---------", 20);
+    print_two_cols(" US", "English (US)", 20);
+    print_two_cols(" UK", "English (UK)", 20);
+    print_two_cols(" hi", "Hindi", 20);
+    print_two_cols(" es", "Spanish", 20);
+    print_two_cols(" fr", "French", 20);
+    print_two_cols(" ja", "Japanese", 20);
+    print_two_cols(" ru", "Russian", 20);
+    print_two_cols(" de", "German", 20);
+    print_two_cols(" it", "Italian", 20);
+    print_two_cols(" ko", "Korean", 20);
+    print_two_cols(" ar", "Arabic", 20);
+    print_two_cols(" tr", "Turkish", 20);
+}
+
 int roosh_google(char **args, int num_args)
 {
-    // only one argument i.e history
-    // is expected
-    if (num_args > 3)
+    if (num_args == 1)
     {
-        invalid_arg_count_error(num_args, 0);
-        return 1;
+        cout << "Please use google --help for any help.\n";
     }
-    if (!strcmp(args[1], "--help"))
+    else if (num_args == 2)
     {
-        cout << "Format:\ngoogle <word_to_search>  : In this default language is English US.\ngoogle <word_to_search> <lang_code> : To search in specific language.\n\nExample:\ngoogle hello\ngoogle hello US\n\nLang Code\tLanguage\n==================\nUS\tEnglish (US)\nhi\tHindi\nes\tSpanish\nfr\tFrench\nja\tJapanese\nru\tRussian\nUK\tEnglish (UK)\nde\tGerman\nit\tItalian\nko\tKorean\nar\tArabic\ntr\tTurkish\n";
+        if (!strcmp(args[1], "--help"))
+        {
+            print_google_help();
+        }
+        else
+        {
+            google_a_description(args[1], "en_US");
+        }
     }
-    else if (num_args > 2)
+    else if (num_args == 3)
     {
         if (!strcmp(args[2], "US"))
             google_a_description(args[1], "en_US");
@@ -240,20 +284,20 @@ int roosh_google(char **args, int num_args)
         else
             google_a_description(args[1], args[2]);
     }
-    else if (num_args == 2)
-    {
-        google_a_description(args[1], "en_US");
-    }
     else
     {
+        cout << "google: error invalid number of arguments\n";
         cout << "Please use google --help for any help.\n";
     }
+
     return 1;
 }
 
+/*** roosh calculator implementation ***/
+
 int roosh_calc(char **args, int num_args)
 {
-    // 2 argumets required
+    // 2 arguments required
     // first is the calc command
     // second is the expresssiongi
     if (num_args > 2)
@@ -265,11 +309,11 @@ int roosh_calc(char **args, int num_args)
     {
         cout << "\nFormat:\tcalc <expression> \n\n";
         cout << "\t+\tAddition\n\t-\tSubtraction\n\t*\tMultiplication\n\t/\tDivide\n\t^\tExponent\n\t%\tModulus\n\t()\tBrackets\n\n";
-    
+
         return 1;
     }
 
-    // tinyexpr evaluates the
+    // tinyexpr evaluates the expresssion
 
     double answer = te_interp(args[1], 0);
     cout << answer << endl;
