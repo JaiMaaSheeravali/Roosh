@@ -1,0 +1,6 @@
+Commands you may need to solve the level-
+git commands like clone, log ..
+
+Checkout our git repository => https://github.com/JaiMaaSheeravali/Roosh.git
+
+The commit hash for the first commit by the author "Prakahar Gupta" in this repository is the password ..

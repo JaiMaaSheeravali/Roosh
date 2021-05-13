@@ -1,0 +1,4 @@
+Commands you may need to solve the level-
+ls cd find cat grep
+
+Hint: The password is stored in a file named 'readme'.
