@@ -185,11 +185,12 @@ int roosh_tutorial()
 
     cout << YELLOW << "\t\tWelcome to Roosh Tutorial!!!" << RESET << endl;
     cout << endl;
-    cout << "\tOur Tutorial only provides a basic usage overview of most commonly used commands in linux." << endl;
-    cout << "\tTo know more about any command you can always use " << RED << "'man command'" << RESET << " in Roosh Input prompt." << endl;
+    cout << "Our Tutorial only provides a basic usage overview of most commonly used commands in linux." << endl;
+    cout << "To know more about any command you can always use " << RED << "'man command'" << RESET << " in Roosh Input prompt." << endl;
     cout << endl;
     cout << "We have also provided certain test levels to test your understanding of tutorial content." << endl;
     cout << "Levels can be accessed by using " << RED << "'tutorial level [level-number]'" << RESET << " command." << endl;
+    cout << endl;
     cout << "You have to find password hidden inside level and submit it using: \n\t" << RED << "'tutorial level [level-number] password'";
     cout << RESET << " command and enterning the password." << endl;
     cout << endl;
