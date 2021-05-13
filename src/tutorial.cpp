@@ -26,7 +26,7 @@ int create_tutorial_folder()
     home = strdup(pw->pw_dir);
     home_dir = home;
     // roosh_launch("rm -rf " + home_dir + "/tutorial");
-    roosh_launch("cp -r tutorial " + home_dir);
+    roosh_launch("cp -r -u tutorial " + home_dir);
     return 0;
 }
 
@@ -34,8 +34,8 @@ int roosh_exec_tutorial(char **args, int num_args)
 {
     //number of arguments can be =>
     // 1 i.e. tutorial
-    // 3 i.e. tutorial level <1-10>
-    // 4 i.e. tutorial level <1-10> password
+    // 3 i.e. tutorial level <1-6>
+    // 4 i.e. tutorial level <1-6> password
 
     //tutorial cmd
     if (num_args == 1)
@@ -62,19 +62,31 @@ int roosh_exec_tutorial(char **args, int num_args)
         ss << args[2];
         ss >> level;
 
-        //level must be b/w 1-10
-        if (level > 0 && level <= 10 && (strlen(args[2]) == level / 10 + 1))
+        //level must be b/w 1-6
+        if (level > 0 && level <= 6 && (strlen(args[2]) == level / 10 + 1))
         {
 
             if (num_args == 3)
             {
-                //display corresponding instructins
-                string path = (home_dir + "/tutorial/lvl_instrns/level" + args[2] + ".txt");
-                print_instructions(path);
+                if (level == 1 || unlocked[level - 1])
+                {
+                    //display corresponding instructins
+                    string path = (home_dir + "/tutorial/lvl_instrns/level" + args[2] + ".txt");
+                    print_instructions(path);
 
-                //navigate to corresponding directory
-                path = (home_dir + "/tutorial/tutorial_levels/level" + args[2]);
-                chdir(path.c_str());
+                    //navigate to corresponding directory
+                    path = (home_dir + "/tutorial/tutorial_levels/level" + args[2]);
+                    chdir(path.c_str());
+                    if (level == 4)
+                    {
+
+                        roosh_launch("chmod 000 " + home_dir + "/tutorial/tutorial_levels/level4/open_me");
+                    }
+                }
+                else
+                {
+                    print_no_access_to_level();
+                }
             }
 
             else
@@ -88,6 +100,7 @@ int roosh_exec_tutorial(char **args, int num_args)
                 else if (unlocked[level - 1])
                 {
                     check_password(level);
+
                     return 1;
                 }
 
@@ -101,8 +114,8 @@ int roosh_exec_tutorial(char **args, int num_args)
 
         else
         {
-            //display error if level is not an integer bw 1 nd 10
-            cerr << "Please enter a level between 1 to 10.\n";
+            //display error if level is not an integer bw 1 nd 6
+            cerr << "Please enter a level between 1 to 6.\n";
             return 1;
         }
     }
@@ -114,11 +127,10 @@ int roosh_exec_tutorial(char **args, int num_args)
     }
 }
 
-
 bool write_tutorial(string filepath)
 {
     string line;
-    filepath = home_dir+"/tutorial/tutorial_cmd/"+filepath;
+    filepath = home_dir + "/tutorial/tutorial_cmd/" + filepath;
 
     ifstream myfile(filepath);
 
@@ -164,8 +176,9 @@ bool write_tutorial(string filepath)
             getline(cin, user_choice);
 
             cout << endl;
-            
-            if(user_choice == "q"){
+
+            if (user_choice == "q")
+            {
                 myfile.close();
                 return true;
             }
@@ -175,7 +188,7 @@ bool write_tutorial(string filepath)
 
     else
         cout << "Unable to open file";
-    
+
     return false;
 }
 
@@ -201,10 +214,10 @@ int roosh_tutorial()
     string user_choice;
     getline(cin, user_choice);
 
-    if(user_choice == "q")
+    if (user_choice == "q")
         return 1;
 
-    cout << endl;    
+    cout << endl;
 
     cout << "\n"
          << BLUE << "          "
@@ -212,13 +225,13 @@ int roosh_tutorial()
     cout << RESET << endl;
     exit_tut = write_tutorial("basiccmdlist.txt");
 
-    if(exit_tut)
+    if (exit_tut)
         return 1;
 
     cout << BLUE << "            "
          << "Git linux commands" << endl;
     cout << RESET << endl;
     exit_tut = write_tutorial("gitcmdlist.txt");
-    
+
     return 1;
 }

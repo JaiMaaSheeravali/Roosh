@@ -1,0 +1,4 @@
+Commands you may need to solve the level-
+ls cd cat grep
+
+Hint: The password is just next to the word "gerrymandering" in any of the three files.

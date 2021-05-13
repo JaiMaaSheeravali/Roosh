@@ -10,15 +10,11 @@ const char *passwd_list[] = {
     "j7uvv2CwUFSujANxHnM2dM4L",
     "wdJPxNNK66cUGra6JJjbCLRe",
     "8X8jevLsYwWpZkhvDHXUWu5Q",
-    "fcyHejqsN4LUgqVD9SACZLzh",
-    "Y99Ch3hbZy8QhDm639BCxayF",
-    "Q9n59xHrrTmyRcWc6Ag8m8d9",
-    "JtfU4VftpqH3wbB6cVdjdLqr",
-    "NZAbCFvQuSrPmDgrQHRCj2GZ"};
+    "713ef6fc74479b3881d7fdb9b696a170173f5b6c"};
 
 string curr_pass;
 int curr_level = 1;
-bool unlocked[10];
+bool unlocked[6];
 
 void print_instructions(string p)
 {
@@ -49,9 +45,16 @@ bool check_password(int level)
     {
         cout << "Success!!\n";
         unlocked[level] = 1;
-        curr_level++;
+        if (level == 6)
+            cout << "All levels completed!\n";
+        else
+            curr_level++;
+
+        return 1;
     }
     else
+    {
         cout << "wrong password!!\n";
-    return 1;
+        return 0;
+    }
 }
