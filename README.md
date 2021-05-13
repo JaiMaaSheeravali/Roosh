@@ -36,15 +36,15 @@ c++17 required
     <li>All Linux Commands are supported.</li>
     <li>Batch Mode done (Use "rsh filename.rsh" \\ Only .rsh files allowed)</li>
     <li>Git Branch, Username, PC name and current directory display during input prompt.</li>
-    <li>"exit" can be used to exit the shell and revert to default linux shell</li>
-    <li>pipes ('|') and redirections ('<' or '>' or '>>') supported</li>
+    <li>"exit" can be used to exit the shell and revert to default linux shell.</li>
+    <li>pipes ('|') and redirections ('<' or '>' or '>>') supported.</li>
     <li>"history" command can be used to list all the commands used in current shell session.</li>
  </ol>
  
  <h3>Remaining</h3>
   <ol>
    <li>Aliases not yet implemented.</li>
-   <li>Commands contatining string (" ") may not function properly.</li>
+   <li>Commands containing string (" ") may not function properly.</li>
   </ol>
   
  <h3>Additional Features</h3>
@@ -64,8 +64,8 @@ c++17 required
  <h3>Implemented</h3>
   <ol>
     <li>"tutorial" command be used to run tutorial content and learn about basic shell and git commands inside shell.</li>
-    <li>"tutorial level <level-number>" can be used to access practice levels and find the hidden flag using shell commands.</li>
-    <li>"tutorial level <level-number> password" can be used to submit the hidden flag in grading software and pass that level.</li>
+    <li>"tutorial level [level-number]" can be used to access practice levels and find the hidden flag using shell commands.</li>
+    <li>"tutorial level [level-number] password" can be used to submit the hidden flag in grading software to pass that level.</li>
   </ol>
 
 **Errors and Solutions:**
