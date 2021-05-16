@@ -44,11 +44,12 @@ bool check_password(int level)
     if (curr_pass == passwd_list[level - 1])
     {
         cout << "Success!!\n";
-        unlocked[level] = 1;
+
         if (level == 6)
             cout << "All levels completed!\n";
-        else
+        else if (!unlocked[level])
             curr_level++;
+        unlocked[level] = 1;
 
         return 1;
     }
