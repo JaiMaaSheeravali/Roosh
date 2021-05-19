@@ -1,0 +1,1752 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="979.76898"
+   height="1082.1462"
+   id="svg1647"
+   sodipodi:docname="Google HTTps.svg"
+   inkscape:version="1.0.2 (1.0.2+r75+1)">
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 82.659223,1000.4702 -12.56554,6.2828 12.56554,6.2828 z"
+     id="path1609"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <metadata
+     id="metadata1651">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="993"
+     id="namedview1649"
+     showgrid="false"
+     inkscape:zoom="2.7484444"
+     inkscape:cx="499.17988"
+     inkscape:cy="1104.6762"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1647"
+     inkscape:document-rotation="0" />
+  <desc
+     id="desc1261">title%20Google%20meaning%20of%20a%20word%0A%0Aactivate%20User%0AUser-%3EShell%3Aexecute%20google%20command%0Aactivate%20Shell%0AShell-%3EShell%3AParse%20the%20command%20into%20language%20and%20word%20to%20search%0AShell-%3EShell%3AMap%20the%20laguage%20to%20Language%20Code%0Aactivate%20server%0AShell-%3Eserver%3AEncrpted%20HTTP%20request%0Aalt%0Aserver-%3Eserver%3ACheck%20if%20language%20is%20valid%0Aserver-%3EShell%3AInvalid%20Language%20HTTP%20error%20response%0AShell-%3EShell%3AInterpret%20Response%0AShell-%3EUser%3AEnter%20Valid%20Language%0Aelse%0Aserver-%3Eserver%3ACheck%20if%20word%20is%20valid%0Aserver-%3EShell%3AInvalid%20word%20HTTP%20error%20response%0AShell-%3EShell%3AInterpret%20Response%0AShell-%3EUser%3AEnter%20Valid%20Word%0Aelse%0Aserver-%3Eserver%3ACollect%20meaning%0Aserver-%3EShell%3AEncrypted%20HTTP%20response%0Adeactivate%20server%0AShell-%3EShell%3AInterpret%20Response%0AShell-%3EUser%3AResponse(Meaning)%20to%20google%20command%0Aend%0Adeactivate%20Shell%0Adeactivate%20user</desc>
+  <defs
+     id="defs1263">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter2897"
+       x="-0.35353872"
+       width="1.7070774"
+       y="-0.0077871969"
+       height="1.0155745">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood2887" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2889" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="2.2212027"
+         result="blur"
+         id="feGaussianBlur2891" />
+      <feOffset
+         dx="6.17978"
+         dy="11.0598"
+         result="offset"
+         id="feOffset2893" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="fbSourceGraphic"
+         id="feComposite2895" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3115" />
+      <feFlood
+         id="feFlood3117"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite3119"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3121"
+         in="composite1"
+         stdDeviation="0.1"
+         result="blur" />
+      <feOffset
+         id="feOffset3123"
+         dx="1.28574"
+         dy="1.37647"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3125"
+         in="fbSourceGraphic"
+         operator="over"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3439" />
+      <feFlood
+         id="feFlood3441"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite3443"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3445"
+         in="composite1"
+         stdDeviation="10"
+         result="blur" />
+      <feOffset
+         id="feOffset3447"
+         dx="40.7907"
+         dy="10.9643"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3449"
+         in="fbSourceGraphic"
+         operator="over"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3463" />
+      <feFlood
+         id="feFlood3465"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="flood"
+         id="feComposite3467"
+         in="fbSourceGraphic"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3469"
+         in="composite1"
+         stdDeviation="10"
+         result="blur" />
+      <feOffset
+         id="feOffset3471"
+         dx="40.7907"
+         dy="10.9643"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3473"
+         in="fbSourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter3485"
+       x="-0.00032113265"
+       width="1.0006423"
+       y="-5.1795591e-06"
+       height="1.0000104">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood3475" />
+      <feComposite
+         in="SourceGraphic"
+         in2="flood"
+         operator="in"
+         result="composite1"
+         id="feComposite3477" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.0020176029"
+         result="blur"
+         id="feGaussianBlur3479" />
+      <feOffset
+         dx="40.7907"
+         dy="10.9643"
+         result="offset"
+         id="feOffset3481" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="fbSourceGraphic"
+         id="feComposite3483" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3499" />
+      <feFlood
+         id="feFlood3501"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="flood"
+         id="feComposite3503"
+         in="fbSourceGraphic"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3505"
+         in="composite1"
+         stdDeviation="10"
+         result="blur" />
+      <feOffset
+         id="feOffset3507"
+         dx="40.7907"
+         dy="10.9643"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3509"
+         in="fbSourceGraphic"
+         operator="over"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3523" />
+      <feFlood
+         id="feFlood3525"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="flood"
+         id="feComposite3527"
+         in="fbSourceGraphic"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3529"
+         in="composite1"
+         stdDeviation="10"
+         result="blur" />
+      <feOffset
+         id="feOffset3531"
+         dx="40.7907"
+         dy="10.9643"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3533"
+         in="fbSourceGraphic"
+         operator="over"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3547" />
+      <feFlood
+         id="feFlood3549"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="flood"
+         id="feComposite3551"
+         in="fbSourceGraphic"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3553"
+         in="composite1"
+         stdDeviation="10"
+         result="blur" />
+      <feOffset
+         id="feOffset3555"
+         dx="40.7907"
+         dy="10.9643"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3557"
+         in="fbSourceGraphic"
+         operator="over"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3739" />
+      <feFlood
+         id="feFlood3741"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite3743"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3745"
+         in="composite1"
+         stdDeviation="10.1907"
+         result="blur" />
+      <feOffset
+         id="feOffset3747"
+         dx="-27.5145"
+         dy="-16.5797"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3749"
+         in="fbSourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter3497">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood3487" />
+      <feComposite
+         in="SourceGraphic"
+         in2="flood"
+         operator="in"
+         result="composite1"
+         id="feComposite3489" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="10"
+         result="blur"
+         id="feGaussianBlur3491" />
+      <feOffset
+         dx="40.7907"
+         dy="10.9643"
+         result="offset"
+         id="feOffset3493" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="fbSourceGraphic"
+         id="feComposite3495" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3511" />
+      <feFlood
+         id="feFlood3513"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="flood"
+         id="feComposite3515"
+         in="fbSourceGraphic"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3517"
+         in="composite1"
+         stdDeviation="10"
+         result="blur" />
+      <feOffset
+         id="feOffset3519"
+         dx="40.7907"
+         dy="10.9643"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3521"
+         in="fbSourceGraphic"
+         operator="over"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3535" />
+      <feFlood
+         id="feFlood3537"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="flood"
+         id="feComposite3539"
+         in="fbSourceGraphic"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3541"
+         in="composite1"
+         stdDeviation="10"
+         result="blur" />
+      <feOffset
+         id="feOffset3543"
+         dx="40.7907"
+         dy="10.9643"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3545"
+         in="fbSourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter2897-3"
+       x="-0.35353872"
+       width="1.7070774"
+       y="-0.0077871969"
+       height="1.0155745">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood2887-6" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2889-7" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="2.2212027"
+         result="blur"
+         id="feGaussianBlur2891-5" />
+      <feOffset
+         dx="6.17978"
+         dy="11.0598"
+         result="offset"
+         id="feOffset2893-3" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="fbSourceGraphic"
+         id="feComposite2895-5" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3115-6" />
+      <feFlood
+         id="feFlood3117-2"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite3119-9"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3121-1"
+         in="composite1"
+         stdDeviation="0.1"
+         result="blur" />
+      <feOffset
+         id="feOffset3123-2"
+         dx="1.28574"
+         dy="1.37647"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3125-7"
+         in="fbSourceGraphic"
+         operator="over"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3439-0" />
+      <feFlood
+         id="feFlood3441-9"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite3443-3"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3445-6"
+         in="composite1"
+         stdDeviation="10"
+         result="blur" />
+      <feOffset
+         id="feOffset3447-0"
+         dx="40.7907"
+         dy="10.9643"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3449-6"
+         in="fbSourceGraphic"
+         operator="over"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3463-2" />
+      <feFlood
+         id="feFlood3465-6"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="flood"
+         id="feComposite3467-1"
+         in="fbSourceGraphic"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3469-8"
+         in="composite1"
+         stdDeviation="10"
+         result="blur" />
+      <feOffset
+         id="feOffset3471-7"
+         dx="40.7907"
+         dy="10.9643"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3473-9"
+         in="fbSourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter2897-3-0"
+       x="-0.35353872"
+       width="1.7070774"
+       y="-0.0077871969"
+       height="1.0155745">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood2887-6-2" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2889-7-3" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="2.2212027"
+         result="blur"
+         id="feGaussianBlur2891-5-7" />
+      <feOffset
+         dx="6.17978"
+         dy="11.0598"
+         result="offset"
+         id="feOffset2893-3-5" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="fbSourceGraphic"
+         id="feComposite2895-5-9" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3115-6-2" />
+      <feFlood
+         id="feFlood3117-2-2"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite3119-9-8"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3121-1-9"
+         in="composite1"
+         stdDeviation="0.1"
+         result="blur" />
+      <feOffset
+         id="feOffset3123-2-7"
+         dx="1.28574"
+         dy="1.37647"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3125-7-3"
+         in="fbSourceGraphic"
+         operator="over"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3439-0-6" />
+      <feFlood
+         id="feFlood3441-9-1"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite3443-3-2"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3445-6-9"
+         in="composite1"
+         stdDeviation="10"
+         result="blur" />
+      <feOffset
+         id="feOffset3447-0-3"
+         dx="40.7907"
+         dy="10.9643"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3449-6-1"
+         in="fbSourceGraphic"
+         operator="over"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3463-2-9" />
+      <feFlood
+         id="feFlood3465-6-4"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="flood"
+         id="feComposite3467-1-7"
+         in="fbSourceGraphic"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3469-8-8"
+         in="composite1"
+         stdDeviation="10"
+         result="blur" />
+      <feOffset
+         id="feOffset3471-7-4"
+         dx="40.7907"
+         dy="10.9643"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite3473-9-5"
+         in="fbSourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter5048"
+       x="-0.040356841"
+       width="1.0807137"
+       y="-0.072799116"
+       height="1.1455982">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood5038" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite5040" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1.2349264"
+         result="blur"
+         id="feGaussianBlur5042" />
+      <feOffset
+         dx="6.73161"
+         dy="6.38654"
+         result="offset"
+         id="feOffset5044" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="fbSourceGraphic"
+         id="feComposite5046" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix5122" />
+      <feFlood
+         id="feFlood5124"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="flood"
+         id="feComposite5126"
+         in="fbSourceGraphic"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur5128"
+         in="composite1"
+         stdDeviation="5.23176"
+         result="blur" />
+      <feOffset
+         id="feOffset5130"
+         dx="2.23845"
+         dy="12.297"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite5132"
+         in="fbSourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter5180"
+       x="-0.042355239"
+       width="1.0847105"
+       y="-0.12378167"
+       height="1.2475632">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood5170" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite5172" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.93323026"
+         result="blur"
+         id="feGaussianBlur5174" />
+      <feOffset
+         dx="2.23845"
+         dy="12.297"
+         result="offset"
+         id="feOffset5176" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite5178" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter5192"
+       x="-0.057556618"
+       width="1.1151133"
+       y="-0.092332371"
+       height="1.1846647">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood5182" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite5184" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1.5662784"
+         result="blur"
+         id="feGaussianBlur5186" />
+      <feOffset
+         dx="2.23845"
+         dy="12.297"
+         result="offset"
+         id="feOffset5188" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite5190" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter5240"
+       x="-0.063187435"
+       width="1.1263748"
+       y="-0.098810725"
+       height="1.1976213">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood5230" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite5232" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1.6761738"
+         result="blur"
+         id="feGaussianBlur5234" />
+      <feOffset
+         dx="2.23845"
+         dy="12.297"
+         result="offset"
+         id="feOffset5236" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite5238" />
+    </filter>
+  </defs>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 62.554353,44.735112 V 1082.1462"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="11.599, 5.02622"
+     id="path1307"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 382.62135,44.735112 V 1082.1462"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="11.599, 5.02622"
+     id="path1309"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 777.30885,44.735112 V 1082.1462"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="11.599, 5.02622"
+     id="path1311"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="none"
+     stroke="none"
+     id="path1315"
+     d=""
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#ffffff"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 30.721943,4.0228119 h 63.66482 V 44.735112 h -63.66482 z"
+     stroke-miterlimit="10"
+     stroke-width="2.41258"
+     stroke-dasharray="none"
+     id="path1317"
+     style="fill:#eee8d5;fill-opacity:1;stroke:#33322e;stroke-opacity:1;filter:url(#filter5240)" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="47.082272"
+     y="29.656446"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1323"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">User</text>
+  <path
+     fill="none"
+     stroke="none"
+     id="path1327"
+     d=""
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#ffffff"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 349.96596,4.0228119 h 65.31079 V 44.735112 h -65.31079 z"
+     stroke-miterlimit="10"
+     stroke-width="2.41258"
+     stroke-dasharray="none"
+     id="path1329"
+     style="fill:#eee8d5;fill-opacity:1;stroke:#33322e;stroke-opacity:1;filter:url(#filter5192)" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="366.32629"
+     y="29.656446"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1335"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Shell</text>
+  <path
+     fill="none"
+     stroke="none"
+     id="path1339"
+     d=""
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#ffffff"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 740.58864,4.0228119 h 73.44042 V 44.735112 h -73.44042 z"
+     stroke-miterlimit="10"
+     stroke-width="2.41258"
+     stroke-dasharray="none"
+     id="path1341"
+     style="fill:#eee8d5;fill-opacity:1;stroke:#33322e;stroke-opacity:1;filter:url(#filter5048)" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="756.94904"
+     y="29.656446"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1347"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Server</text>
+  <path
+     fill="#ffffff"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 782.60843,261.91614 h 15.07865 V 946.48681 H 782.60843 V 261.91614"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1357"
+     style="opacity:1;mix-blend-mode:normal;fill:#eee8d5;fill-opacity:1;stroke:#33322e;stroke-opacity:1;filter:url(#filter2897)"
+     transform="matrix(0.99737409,0,0,1.0100937,-10.764037,-46.400388)" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="136.40686"
+     y="74.89241"
+     width="172.36198"
+     height="19.602243"
+     id="rect1359" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="138.66866"
+     y="88.463211"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1363"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">execute google command</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 70.093683,94.494712 H 362.66727"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1367"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 362.51649,88.211912 12.56554,6.2828 -12.56554,6.282698 z"
+     id="path1369"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="408.00375"
+     y="117.11269"
+     width="356.48825"
+     height="19.602243"
+     id="rect1375" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="410.26553"
+     y="130.68343"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1379"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Parse the command into language and word to search</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 390.16068,136.7149 h 60.31459 v 19.60224 h -47.89984"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1383"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 402.72622,150.03437 -12.56554,6.28277 12.56554,6.28278 z"
+     id="path1385"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="408.00375"
+     y="178.93513"
+     width="238.40099"
+     height="19.602243"
+     id="rect1391" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="410.26553"
+     y="192.50594"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1395"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Map the laguage to Language Code</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 390.16068,198.53736 h 60.31459 v 19.60225 h -47.89984"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1399"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 402.72622,211.85684 -12.56554,6.28277 12.56554,6.28277 z"
+     id="path1401"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="500.7258"
+     y="240.75758"
+     width="158.47862"
+     height="19.602243"
+     id="rect1407" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="502.98758"
+     y="254.32838"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1411"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Encrpted HTTP request</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 390.16068,260.35982 H 757.35477"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1415"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 757.20399,254.07705 12.56554,6.28277 -12.56554,6.28277 z"
+     id="path1417"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="802.69128"
+     y="323.69012"
+     width="170.72318"
+     height="19.602243"
+     id="rect1423" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="804.95306"
+     y="337.26093"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1427"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Check if language is valid</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 784.84818,343.29239 h 60.31459 v 19.60225 h -47.89984"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1431"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 797.41372,356.61187 -12.56554,6.28277 12.56554,6.28277 z"
+     id="path1433"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="451.02121"
+     y="385.51263"
+     width="257.88779"
+     height="19.602243"
+     id="rect1439" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="453.28302"
+     y="399.08337"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1443"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Invalid Language HTTP error response</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 769.76953,405.11486 H 402.57543"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1447"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 402.72622,398.83209 -12.56554,6.28277 12.56554,6.28277 z"
+     id="path1449"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="408.00375"
+     y="427.73285"
+     width="129.17328"
+     height="19.602243"
+     id="rect1455" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="410.26553"
+     y="441.30359"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1459"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Interpret Response</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 390.16068,447.33507 h 60.31459 v 19.60225 h -47.89984"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1463"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 402.72622,460.65455 -12.56554,6.28277 12.56554,6.28277 z"
+     id="path1465"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="150.38339"
+     y="489.5553"
+     width="144.40891"
+     height="19.602243"
+     id="rect1471" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="152.64519"
+     y="503.12604"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1475"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Enter Valid Language</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 375.08203,509.15754 H 82.508433"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1479"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 82.659223,502.87477 -12.56554,6.28277 12.56554,6.28277 z"
+     id="path1481"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="802.69128"
+     y="572.48785"
+     width="142.17641"
+     height="19.602243"
+     id="rect1487" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="804.95306"
+     y="586.05865"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1491"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Check if word is valid</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 784.84818,592.09011 h 60.31459 v 19.60224 h -47.89984"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1495"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 797.41372,605.40958 -12.56554,6.28277 12.56554,6.28277 z"
+     id="path1497"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="467.74207"
+     y="634.31036"
+     width="224.44606"
+     height="19.602243"
+     id="rect1503" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="470.00388"
+     y="647.88116"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1507"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Invalid word HTTP error response</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 769.76953,653.91257 H 402.57543"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1511"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 402.72622,647.6298 -12.56554,6.28277 12.56554,6.28277 z"
+     id="path1513"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="408.00375"
+     y="676.53058"
+     width="129.17328"
+     height="19.602243"
+     id="rect1519" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="410.26553"
+     y="690.10138"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1523"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Interpret Response</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 390.16068,696.13279 h 60.31459 v 19.60224 h -47.89984"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1527"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 402.72622,709.45226 -12.56554,6.28277 12.56554,6.28277 z"
+     id="path1529"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="165.6122"
+     y="738.35303"
+     width="113.95132"
+     height="19.602243"
+     id="rect1535" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="167.87399"
+     y="751.92383"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1539"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Enter Valid Word</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 375.08203,757.95525 H 82.508433"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1543"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 82.659223,751.67248 -12.56554,6.28277 12.56554,6.28277 z"
+     id="path1545"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="802.69128"
+     y="821.28564"
+     width="109.61492"
+     height="19.602243"
+     id="rect1551" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="804.95306"
+     y="834.85638"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1555"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Collect meaning</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 784.84818,840.88782 h 60.31459 v 19.60224 h -47.89984"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1559"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 797.41372,854.20729 -12.56554,6.28277 12.56554,6.28277 z"
+     id="path1561"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="491.35809"
+     y="883.10803"
+     width="177.214"
+     height="19.602243"
+     id="rect1567" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="493.6199"
+     y="896.67877"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1571"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Encrypted HTTP response</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 769.76953,902.71028 H 402.57543"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1575"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 402.72622,896.42751 -12.56554,6.28277 12.56554,6.28277 z"
+     id="path1577"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="408.00375"
+     y="925.32825"
+     width="129.17328"
+     height="19.602243"
+     id="rect1583" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="410.26553"
+     y="938.89905"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1587"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Interpret Response</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 390.16068,944.9305 h 60.31459 v 19.60227 h -47.89984"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1591"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#000000"
+     stroke="none"
+     paint-order="stroke fill markers"
+     d="m 402.72622,958.24997 -12.56554,6.2828 12.56554,6.2827 z"
+     id="path1593"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <rect
+     fill="#ffffff"
+     stroke="none"
+     x="87.936752"
+     y="987.15076"
+     width="269.30222"
+     height="19.602243"
+     id="rect1599" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="14.6667px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="90.198547"
+     y="1000.7216"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1603"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">Response(Meaning) to google command</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 375.08203,1006.753 H 82.508433"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1607"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 2.2397527,282.9778 H 978.69195 V 1029.371 H 2.2397527 Z"
+     stroke-miterlimit="10"
+     stroke-width="2.15409"
+     stroke-dasharray="none"
+     id="path1617"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#ffffff"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 2.2397527,282.9778 v 18.09438 H 46.072743 l 9.04719,-9.04719 V 282.9778 H 2.2397527"
+     stroke-miterlimit="10"
+     stroke-width="2.15409"
+     stroke-dasharray="none"
+     id="path1619"
+     style="fill:#eee8d5;fill-opacity:1;stroke:#33322e;stroke-opacity:1;filter:url(#filter5180)" />
+  <text
+     fill="#000000"
+     stroke="none"
+     font-family="sans-serif"
+     font-size="11.7333px"
+     font-style="normal"
+     font-weight="bold"
+     text-decoration="normal"
+     x="17.318417"
+     y="295.04071"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     xml:space="preserve"
+     id="text1621"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'">alt</text>
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 2.2397527,531.77551 H 978.69195"
+     stroke-miterlimit="10"
+     stroke-width="2.15409"
+     stroke-dasharray="3.76966"
+     id="path1623"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="none"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="M 2.2397527,780.57322 H 978.69195"
+     stroke-miterlimit="10"
+     stroke-width="2.15409"
+     stroke-dasharray="3.76966"
+     id="path1627"
+     style="stroke:#33322e;stroke-opacity:1" />
+  <path
+     fill="#ffffff"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 1172.9624,202.42509 h 15.0786 v 684.57066 h -15.0786 V 202.42509"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1357-2"
+     style="fill:#eee8d5;fill-opacity:1;stroke:#33322e;stroke-opacity:1;filter:url(#filter2897-3)"
+     transform="matrix(0.91694458,0,0,1.3797737,-700.28349,-202.82259)" />
+  <path
+     fill="#ffffff"
+     stroke="#000000"
+     paint-order="fill stroke markers"
+     d="m 1550.674,209.31358 h 15.0786 V 893.88424 H 1550.674 V 209.31358"
+     stroke-miterlimit="10"
+     stroke-width="1.25655"
+     stroke-dasharray="none"
+     id="path1357-2-0"
+     style="fill:#eee8d5;fill-opacity:1;stroke:#33322e;stroke-opacity:1;filter:url(#filter2897-3-0)"
+     transform="matrix(0.89478912,0,0,1.4576014,-1332.704,-238.61829)" />
+</svg>
