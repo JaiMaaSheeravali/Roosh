@@ -1,10 +1,5 @@
-**To execute the shell:**
 
-```shell
-./output/main
-```
-
-**To Modify and rebuild shell:**
+**To build and run the shell:**
 
 ```shell
 sudo apt-get update
