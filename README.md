@@ -42,13 +42,7 @@ c++17 required
     <li>pipes ('|') and redirections ('<' or '>' or '>>') supported.</li>
     <li>"history" command can be used to list all the commands used in current shell session.</li>
  </ol>
- 
- <h3>Remaining</h3>
-  <ol>
-   <li>Aliases not yet implemented.</li>
-   <li>Commands containing string (" ") may not function properly.</li>
-  </ol>
-  
+
  <h3>Additional Features</h3>
  
  <h3>Implemented</h3>
