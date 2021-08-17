@@ -1,6 +1,8 @@
+<h2>Design Document</h2>
 
-**To build and run the shell:**
-
+[Click on this](../master/design_doc.md)
+<h2>To build and run the shell:</h2>
+  
 ```shell
 sudo apt-get update
 sudo apt-get install cmake
@@ -11,7 +13,7 @@ make
 
 c++17 required
 
-**Theory:**
+<h2>Theory:</h2>
 
 - The basic shell perform these basic operations:
 
