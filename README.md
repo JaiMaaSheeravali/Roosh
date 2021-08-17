@@ -1,6 +1,6 @@
 <h2>Design Document</h2>
 
-[Click on this](../master/design_doc.md)
+[Click here for High and Low Level Design](../master/design_doc.md)
 <h2>To build and run the shell:</h2>
   
 ```shell
